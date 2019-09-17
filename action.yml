@@ -1,0 +1,11 @@
+name: 'Branch mirroring'
+description: 'Mirror commits from source to target branch on push'
+inputs:
+  branch_matrix:
+    description: 'Branch merging matrix'
+outputs:
+  status:
+    description: 'Status'
+runs:
+  using: 'node12'
+  main: 'index.js'
